@@ -1,6 +1,6 @@
 import React from 'react';
 import { StackNavigator } from 'react-navigation';
-import { HomeScreen, HotelsScreen, DetailScreen, ProfileScreen }  from '../screens';
+import { HomeScreen, HotelsScreen, DetailScreen, ProfileScreen, ScanScreen }  from '../screens';
 import { HeaderLogo } from '../components';
 import constants from '../config/constants';
 
@@ -8,6 +8,9 @@ export default StackNavigator(
   {
     Home: {
       screen: HomeScreen,
+    },
+    Scan: {
+      screen: ScanScreen,
     },
     Hotels: {
       screen: HotelsScreen,
@@ -20,7 +23,7 @@ export default StackNavigator(
     },
   },
   {
-    initialRouteName: 'Home',
+    initialRouteName: 'Scan',
     navigationOptions: {
       headerTitle: "RestaurantApp", //HeaderLogo
       gesturesEnabled: false,
